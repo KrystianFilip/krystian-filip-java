@@ -1,4 +1,5 @@
-package basics.collections.maps.hashmaps;
+package basics.collections.maps.salaries;
+
 /* This will be our VALUE object in HashMap with public constructor, attributes and toString method */
 public class SalaryParameters {
     Double baseSalary;
@@ -12,6 +13,11 @@ public class SalaryParameters {
         this.ceoBonus = ceoBonus;
         this.functionAddSalary = functionAddSalary;
     }
+
+    public Double getBaseSalary() {
+        return baseSalary;
+    }
+
     public String toString() {
         return baseSalary + " + " + regulatedBonus + " + "
                 + ceoBonus + " + " + functionAddSalary;

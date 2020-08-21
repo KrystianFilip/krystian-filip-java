@@ -1,4 +1,4 @@
-package basics.loops;
+package basics.loops.forloop;
 
 import java.util.ArrayList;
 import java.util.List;

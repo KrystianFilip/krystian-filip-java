@@ -1,4 +1,4 @@
-package basics.collections.maps.hashmaps;
+package basics.collections.maps.salaries;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,5 +36,14 @@ public class HashMapTest {
         /* Map includes two different types of elements - key and value - but the type that represents the whole HashMap
         will be - entry (it defines itself in interface Map) - we can get access to this beauty thanks to entrySet(), getKey(),
         getValue() methods. */
+        for(Map.Entry<Employee, SalaryParameters> entry : paymentParameters.entrySet()) {
+            System.out.println("Salary of: " + entry.getKey() + " equals: " + entry.getValue());
+            if(entry.getValue().getBaseSalary() >= 5000) {
+                System.out.println( "The chosen one: " + entry.getKey() + " makes: " +
+                        entry.getValue().getBaseSalary() + " as a regular payment.");
+            }
+        }
+        /* Adding some getters to the SalaryParameters class allows us to modify our program to display only
+        certain salary parameters - e.g base salary. */
     }
 }

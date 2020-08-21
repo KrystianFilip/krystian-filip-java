@@ -3,8 +3,7 @@ package basics.collections.linkedlists;
 import java.util.LinkedList;
 import java.util.List;
 /*TASK: Write a program using LinkedList that contains references to the objects describing books in library.
-        Then filter them to find those with publication year exceeding year 2000.
-*/
+        Then filter them to find those with publication year exceeding year 2000. */
 public class BookList {
     public static void main(String[] args) {
         List<Book> bookList = new LinkedList<>();

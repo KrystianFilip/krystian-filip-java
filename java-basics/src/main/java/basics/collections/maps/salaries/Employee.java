@@ -1,4 +1,4 @@
-package basics.collections.maps.hashmaps;
+package basics.collections.maps.salaries;
 
 import java.util.Objects;
 
@@ -29,4 +29,8 @@ public class Employee {
         return Objects.hash(peselId);
     }
 
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " (" + peselId + ")";
+    }
 }
