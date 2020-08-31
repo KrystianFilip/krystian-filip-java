@@ -1,0 +1,33 @@
+Stream is a flow of data passing through certain functionality. It allows us to describe what we want to do with data or how
+we want to process it. Data could be stored in a collection or it could be result of working on regular expressions. Stream can wrap
+almost every database, they regulate the workflow and help to process big sets much faster.
+
+We can visualise the stream as a set of sorted transforming(changing data to a different form) or filtering(rejecting some data)
+functions, that affect initial data set but allow us to "re-build" it into some sort of lasting collection.
+
+Functional programming is nothing else but converting initial data set and passing it through functions in order to get new
+data set. We can divide functions into:
+1. Intermediate operations - transforming or filtering.
+2. Terminal operations(Collectors) - shutting down the stream and converting data back to initial data set.
+
+Stream always ends with terminal operations, result of executing them is a concrete type(collection,set,etc) or
+scalar type(singular value - when terminal operation calculates sum of elements of the stream and returns it in form of a
+number or a single string of letters).
+Result of executing intermediate operations is always stream - each operation contains input and produces output stream - the difference
+between those streams is that they're being returned in a different form changed through transformation or filtering.
+That's why to output of the operation we can connect another intermediate operation, and so on. Result of each intermediate operation
+is another stream object containing "processed" data.
+
+Input Data Set -> Stream Initiation -> Data Transformation -> Data Filtering -> Collector(Terminal Operation) -> Output Data Set
+
+In Java we can divide objects into:
+1. Mutable - those that can be changed after they're created (everything except for string is mutable by default).
+2. Immutable - those that remain unchangeable after creating it through the constructor (immutable object is constant from
+                the beginning to the end of its role in the program).
+
+When we are writing programs using Stream Interface, Lambda Expressions or different elements of functional programming, we need to
+obey one rule - objects flowing through functions must always be immutable. If the object requires some changes - we need to create
+new object - ergo each transforming operation executed on a stream creates a new object without modifying initial ones.
+
+To ensure immutability of class objects we are adding a key word "final" next to class,attributes and arguments used in constructor,
+to addition - all attributes need to be private

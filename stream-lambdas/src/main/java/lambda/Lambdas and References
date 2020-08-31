@@ -1,0 +1,16 @@
+Lambdas work with interfaces - always. When we are passing lambda expression to method, the method will expect interface
+type argument. However this interface must contain only one method - implementation of this method will be our lambda expression.
+
+Lambda expressions are becoming anonymous objects implementing certain interface when we are passing them to the method that
+expects interface type argument. In this case we're usually trying to pass functionality as an argument to another method or
+code as data, lambdas allow us to do so.
+
+We use lambda expressions to create anonymous methods. Sometimes, however, a lambda expression does nothing but call an existing method.
+In those cases, it's often clearer to refer to the existing method by name. Method references enable you to do this;
+they are compact, easy-to-read lambda expressions for methods that already have a name.
+
+There are four kinds of method references:
+1.Reference to a static method - ClassName::methodName
+2.Reference to existing object - Object::methodName
+3.Reference to class constructor - ClassName::new
+4.Reference to an instance method of an object of a particular type - Type::methodName
