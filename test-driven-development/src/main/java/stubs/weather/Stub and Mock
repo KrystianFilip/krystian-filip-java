@@ -1,0 +1,57 @@
+Imagine that you're working in a firm that has few different, independent teams of developers. Together you're working on a program
+named "Multimedia Weather Forecast". You divided your responsibilities like this:
+
+1. Team #1 is working on a software of sensors in the weather stations, data transfer and collection in our firm database.
+2. Team #2 is creating a software that builds the weather station model able to predict the weather of few days ahead (based on a
+    stored historical measurements and current data from the sensors).
+3. Team #3 is developing a website of the entire project and displays calculated weather in form of cute graphical maps.
+
+In order to do this sequentially team #2 would have to wait for the team #1 to finish their calculations. Analogically it applies to the
+co-relation between team #3 and team #2.
+
+In real world all those projects can run simultaneously in order to close the entire project faster, works is only preceded by
+ establishing few working interface between components created by each team. In the situation described above we have two basic
+ elements during the tests:
+>>>SUT(System Under Test) - lines of code which is under a test.
+>>>DOC(Depended On Component) - piece of a system dependant on a SUT's.
+
+In our example:
+Team #1 SUT: Sensors, a device collecting measurements and software that shares results of the measurements.
+Team #1 DOC:  - .
+
+Team #2 SUT: Software that calculates the measurements in order to predict the weather and software that shares the result with team #3.
+Team #2 DOC: Software that shares results of the measurements directly from the sensors.
+
+Team #3 SUT: Software that generates maps and a website.
+Team #3 DOC: Software that shares calculations of the measurements.
+
+In order to run tests, teams need to replace their dependencies with something for time being. The whole replacing process is called
+stubbing - it runs "something" that will temporarily act as real subsystem(dependency of tested software).
+
+-----------------------------------------------------------------------------------------------------------------------
+In former example we were dealing with our dependency using stub in form of a hardcoded dummy class that was returning
+data in format we expected. It is a temporary solution, but in our armory we've got mockito library.
+
+Mockito library allows us to use mocks - very similar solution to stubs but it differs in implementation because we don't
+need to write a dummy class resembling our dependency. Mockito library creates a mock for us that acts as an artificial class
+needing only some instructions how to behave when we are referencing from the point of our SUT.
+
+Mock build:
+
+Temperatures temperaturesMock = mock(Temperatures.class)
+
+mock - call to .mock() method of Mockito class that creates a mock of given interface or class.
+.class - call to descriptor of a class or interface.
+
+We are creating an artificial class that resembles the real one implementing Temperatures interface without writing stub code.
+This object allows us calls to the methods of the interface but values are set on default (0 for numerical types, false for boolean
+and empty collections for collection types).
+
+In order to return expected values we need to create a new object(in our case - HashMap that stores measurements from sensors).
+We are creating new HashMap temperaturesMap and using to key words: when and then.
+
+when(temperaturesMock.getTemperatures()).thenReturn(temperaturesMap)
+
+when - suggests that we are reacting inside our mock when the method is being called (when mock is trying to read measurements)
+
+thenReturn - through this method we are returning prepared earlier HashMap temperaturesMap.
