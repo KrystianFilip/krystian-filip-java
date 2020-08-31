@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="stubs.statistics.ForumStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-08-31T10:19:07" hostname="DESKTOP-4CJ5UDI" time="0.012">
+  <properties/>
+  <testcase name="testCalculateAdvStatisticsMoreCommentsThanPosts" classname="stubs.statistics.ForumStatisticsTestSuite" time="0.005"/>
+  <testcase name="testCalculateAdvStatisticsWithHundredUsers" classname="stubs.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsMorePostsThanComments" classname="stubs.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsWithZeroComments" classname="stubs.statistics.ForumStatisticsTestSuite" time="0.0"/>
+  <testcase name="testCalculateAdvStatisticsWithZeroPosts" classname="stubs.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsWithZeroUsers" classname="stubs.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <testcase name="testCalculateAdvStatisticsWithThousandPosts" classname="stubs.statistics.ForumStatisticsTestSuite" time="0.001"/>
+  <system-out><![CDATA[Initiating Forum Statistics Test Suite...
+Test #1
+Test #2
+Test #3
+Test #4
+Test #5
+Test #6
+Test #7
+Test ended with total amount of tests: 7
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

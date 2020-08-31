@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testing.forum.ForumTestSuite" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-08-31T10:19:07" hostname="DESKTOP-4CJ5UDI" time="0.012">
+  <properties/>
+  <testcase name="testAddPost" classname="testing.forum.ForumTestSuite" time="0.003"/>
+  <testcase name="testGetPost" classname="testing.forum.ForumTestSuite" time="0.0"/>
+  <testcase name="testRemoveComment" classname="testing.forum.ForumTestSuite" time="0.001"/>
+  <testcase name="testRemoveNonExistingPost" classname="testing.forum.ForumTestSuite" time="0.001"/>
+  <testcase name="testRemoveNonExistingComment" classname="testing.forum.ForumTestSuite" time="0.003"/>
+  <testcase name="testRemovePost" classname="testing.forum.ForumTestSuite" time="0.001"/>
+  <testcase name="testGetComment" classname="testing.forum.ForumTestSuite" time="0.0"/>
+  <testcase name="testAddComment" classname="testing.forum.ForumTestSuite" time="0.0"/>
+  <system-out><![CDATA[Forum Test Suite initiated.
+Preparing Test Case: #1
+Preparing Test Case: #2
+Preparing Test Case: #3
+Preparing Test Case: #4
+Preparing Test Case: #5
+Preparing Test Case: #6
+Preparing Test Case: #7
+Preparing Test Case: #8
+Forum Test Suite ended.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

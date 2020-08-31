@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testing.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-08-31T10:19:07" hostname="DESKTOP-4CJ5UDI" time="0.004">
+  <properties/>
+  <testcase name="testOddNumbersExterminatorEmptyList" classname="testing.CollectionTestSuite" time="0.002"/>
+  <testcase name="testOddNumbersExterminatorNormalList" classname="testing.CollectionTestSuite" time="0.002"/>
+  <system-out><![CDATA[Testing started...
+Testing ended.
+Testing started...
+[6, 10, 29, 5, 7, 16, 2, 7, 26, 20]
+[6, 10, 16, 2, 26, 20]
+Testing ended.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

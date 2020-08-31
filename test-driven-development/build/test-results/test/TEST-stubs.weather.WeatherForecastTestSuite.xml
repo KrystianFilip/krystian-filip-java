@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="stubs.weather.WeatherForecastTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-31T10:19:07" hostname="DESKTOP-4CJ5UDI" time="0.005">
+  <properties/>
+  <testcase name="testCalculateForecastWithStub" classname="stubs.weather.WeatherForecastTestSuite" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

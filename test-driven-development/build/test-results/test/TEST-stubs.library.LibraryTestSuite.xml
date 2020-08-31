@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="stubs.library.LibraryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-08-31T10:08:22" hostname="DESKTOP-4CJ5UDI" time="0.141">
+<testsuite name="stubs.library.LibraryTestSuite" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-08-31T10:19:07" hostname="DESKTOP-4CJ5UDI" time="0.139">
   <properties/>
-  <testcase name="testListBooksByPartialTitleWithFragmentShorterThan3Letters" classname="stubs.library.LibraryTestSuite" time="0.125"/>
-  <testcase name="testListBooksByBorrowerNameWithFiveBooks" classname="stubs.library.LibraryTestSuite" time="0.006"/>
-  <testcase name="testListBooksByPartialTitleWith20Exemplars" classname="stubs.library.LibraryTestSuite" time="0.003"/>
+  <testcase name="testListBooksByPartialTitleWithFragmentShorterThan3Letters" classname="stubs.library.LibraryTestSuite" time="0.131"/>
+  <testcase name="testListBooksByBorrowerNameWithFiveBooks" classname="stubs.library.LibraryTestSuite" time="0.003"/>
+  <testcase name="testListBooksByPartialTitleWith20Exemplars" classname="stubs.library.LibraryTestSuite" time="0.001"/>
   <testcase name="testListBooksByPartialTitle" classname="stubs.library.LibraryTestSuite" time="0.001"/>
-  <testcase name="testListBooksByBorrowerNameWithNoBooksBorrowed" classname="stubs.library.LibraryTestSuite" time="0.002"/>
-  <testcase name="testListBooksByBorrowerNameWithOneBook" classname="stubs.library.LibraryTestSuite" time="0.001"/>
+  <testcase name="testListBooksByBorrowerNameWithNoBooksBorrowed" classname="stubs.library.LibraryTestSuite" time="0.0"/>
+  <testcase name="testListBooksByBorrowerNameWithOneBook" classname="stubs.library.LibraryTestSuite" time="0.0"/>
   <system-out><![CDATA[Starting test #1
 Starting test #2
 Starting test #3
